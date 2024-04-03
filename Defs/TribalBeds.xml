@@ -143,10 +143,10 @@
 		<altitudeLayer>Building</altitudeLayer>	
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
-			<WorkToBuild>12000</WorkToBuild>
+			<WorkToBuild>500</WorkToBuild>
 			<Mass>8</Mass>
 			<Flammability>1.0</Flammability>
-			<Beauty>30</Beauty>
+			<Beauty>0.75</Beauty>
 		</statBases>
 		
 		<pathCost>60</pathCost>
@@ -198,10 +198,10 @@
 		
 		<statBases>
 			<MaxHitPoints>125</MaxHitPoints>
-			<WorkToBuild>18000</WorkToBuild>
+			<WorkToBuild>800</WorkToBuild>
 			<Mass>20</Mass>
 			<Flammability>1.0</Flammability>
-			<Beauty>50</Beauty>
+			<Beauty>0.75</Beauty>
 		</statBases>
 		
 		<size>(2,1)</size>
