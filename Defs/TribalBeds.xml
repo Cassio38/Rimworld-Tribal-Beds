@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>  
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>Bed_Tribal_Simple</defName>
+    <label>simple Tribal bed</label>
+    <description>A somewhat comfy net and pillow rested on a sturdy frame.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Bed/TribalSimpleBed/TribalSimpleBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+		  <li>Table_TribalEndTable</li>
+		  <li>Table_TribalDresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>30</Mass>
+      <BedRestEffectiveness>0.970</BedRestEffectiveness>
+      <Comfort>0.7</Comfort>
+      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.98</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+      <paintable>true</paintable>
+    </building>
+    <fillPercent>0.3</fillPercent>
+    <pathCost>60</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <techLevel>Medieval</techLevel>
+    <!--<researchPrerequisites>
+      <li>MF_BasicFurniture</li>
+    </researchPrerequisites>-->
+    <uiIconScale>0.90</uiIconScale>
+    <designationCategory>Furniture</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BedWithQualityBase">
+		<defName>Bed_Tribal_Double</defName>
+		<label>Double Tribal bed</label>
+		<description>A tribal double.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bed/TribalDoubleBed/TribalDoubleBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>EndTable</li>
+					<li>Dresser</li>
+					<li>Table_TribalEndTable</li>
+					<li>Table_TribalDresser</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>60</Mass>
+			<Beauty>0.5</Beauty>
+			<BedRestEffectiveness>0.97</BedRestEffectiveness>
+			<Comfort>0.7</Comfort>
+			<ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.98</SurgerySuccessChanceFactor>
+		</statBases>
+		<size>(2,2)</size>
+		<stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<!--<costList>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>-->
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>3</bed_healPerDay>
+			<paintable>true</paintable>
+		</building>
+		<!--<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>-->
+		<fillPercent>0.3</fillPercent>
+		<pathCost>60</pathCost>
+		<!--<leaveResourcesWhenKilled>False</leaveResourcesWhenKilled>-->
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<castEdgeShadows>True</castEdgeShadows>
+		<techLevel>Medieval</techLevel>
+		<uiIconScale>0.90</uiIconScale>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+	
+	
+ <ThingDef ParentName="TableBase">
+    <defName>Table_TribalEndTable</defName>
+    <label>Tribal end table</label>
+    <description>Tribal EndTable</description>
+    <surfaceType>Item</surfaceType>
+    <graphicData>
+      <texPath>Things/Building/Furniture/EndTable/TribalEndTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>	
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>8</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>30</Beauty>
+    </statBases>
+    <pathCost>60</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>50</costStuffCount>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+	<building>
+      <paintable>true</paintable>
+    </building>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.025</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+	<techLevel>Medieval</techLevel>
+    <designationCategory>Furniture</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="TableBase">
+    <defName>Table_TribalDresser</defName>
+    <label>Tribal dresser</label>
+    <description>Tribal Dresser</description>
+    <surfaceType>Item</surfaceType>
+    <graphicData>
+      <texPath>Things/Building/Furniture/Dresser/TribalDresser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,1)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>	
+    <statBases>
+      <MaxHitPoints>125</MaxHitPoints>
+      <WorkToBuild>18000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>50</Beauty>
+    </statBases>
+    <size>(2,1)</size>
+    <pathCost>60</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>70</costStuffCount>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <building>
+      <paintable>true</paintable>
+    </building>	
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.025</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>6</maxDistance>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+	<techLevel>Medieval</techLevel>
+    <designationCategory>Furniture</designationCategory>
+  </ThingDef>	
+
+</Defs>
