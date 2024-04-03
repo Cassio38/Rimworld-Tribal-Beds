@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://imgur.com/a/FphqMyZ" alt="Tribal Beds" />
+  <img src="[https://imgur.com/a/FphqMyZ](https://i.imgur.com/TLVE5hG.png)" alt="Tribal Beds" />
 </p>
 
 # Tribal Beds
